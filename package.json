@@ -2,9 +2,10 @@
   "name": "nodejs-tdd-katas",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/run.js",
   "scripts": {
-    "test": "mocha --require babel-core/register --require babel-polyfill"
+    "test": "mocha --require babel-core/register --require babel-polyfill",
+    "start": "node --require babel-core/register --require babel-polyfill ./bin/run.js"
   },
   "author": "",
   "license": "ISC",

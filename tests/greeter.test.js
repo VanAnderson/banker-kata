@@ -1,4 +1,4 @@
-import Greeter from './index';
+import Greeter from '../lib/greeter';
 import { equal } from "assert";
 
 describe(('Greeter'), () => {
