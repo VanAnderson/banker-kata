@@ -7,7 +7,9 @@ import { one,
          six, 
          seven, 
          eight, 
-         nine } from '../lib/scanned-digit/digits';
+         nine,
+         zero
+       } from '../lib/scanned-digit/digits';
 import { equal } from "assert";
 
 
@@ -55,5 +57,10 @@ describe(('ScannedDigit'), () => {
   it('will read the correct value for nine', () => {
     const digit = new ScannedDigit(nine);
     equal(9, digit.toInteger());
+  });
+
+  it('will read the correct value for zero', () => {
+    const digit = new ScannedDigit(zero);
+    equal(0, digit.toInteger());
   });
 });
