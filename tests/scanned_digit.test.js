@@ -63,4 +63,14 @@ describe(('ScannedDigit'), () => {
     const digit = new ScannedDigit(zero);
     equal(0, digit.toInteger());
   });
+
+  it('will return true for isLegible when given a correct string', () => {
+    const digit = new ScannedDigit(zero);
+    equal(true, digit.isLegible());
+  });
+
+  it('will return false for isLegible when given a correct string', () => {
+    const digit = new ScannedDigit('fdsksjdkfjs');
+    equal(false, digit.isLegible());
+  });
 });
