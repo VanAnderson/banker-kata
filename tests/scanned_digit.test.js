@@ -6,6 +6,6 @@ import { equal } from "assert";
 describe(('ScannedDigit'), () => {
   it('will read the correct value', () => {
     const digit = new ScannedDigit(one)
-    equal(1, digit.toInteger);
+    equal(1, digit.toInteger());
   })
 })
